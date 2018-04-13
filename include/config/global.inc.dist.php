@@ -19,7 +19,7 @@ $config['skip_config_tests'] = false;
  * Unless you disable this, we'll do a check for a valid coin address on registration.
  *  https://github.com/MPOS/php-mpos/wiki/Config-Setup#check-for-valid-wallet-address
  */
-$config['check_valid_coinaddress'] = true;
+$config['check_valid_coinaddress'] = false;
 
 /**
  * Defines
@@ -27,8 +27,8 @@ $config['check_valid_coinaddress'] = true;
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-defines--salts
  */
 $config['DEBUG'] = 0;
-$config['SALT'] = 'PLEASEMAKEMESOMETHINGRANDOM';
-$config['SALTY'] = 'THISSHOULDALSOBERRAANNDDOOM';
+$config['SALT'] = 'PLEASEMAKEsdfsdfMESOMETHINGRANDOM';
+$config['SALTY'] = 'THISSHOUsdfsdfLDALSOBERRAANNDDOOM';
 
 /**
   * Coin Algorithm
@@ -92,7 +92,7 @@ $config['swiftmailer']['smtp']['throttle'] = 100;
  **/
 $config['gettingstarted']['coinname'] = 'Litecoin';
 $config['gettingstarted']['coinurl'] = 'http://www.litecoin.org';
-$config['gettingstarted']['stratumurl'] = '';
+$config['gettingstarted']['stratumurl'] = 'findblocks.com';
 $config['gettingstarted']['stratumport'] = '3333';
 
 /**
@@ -110,8 +110,8 @@ $config['price']['currency'] = 'USD';
  *  Minimum and Maximum auto payout amount
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-automatic-payout-thresholds
  **/
-$config['ap_threshold']['min'] = 1;
-$config['ap_threshold']['max'] = 250;
+$config['ap_threshold']['min'] = 10;
+$config['ap_threshold']['max'] = 25000000000;
 
 /**
  * Minimum manual Payout Threshold
@@ -216,7 +216,7 @@ $config['archive']['maxage'] = 60 * 24;
  *  Fees applied to users
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-pool-fees
  */
-$config['fees'] = 0;
+$config['fees'] = 3;
 
 /**
  * PPLNS
